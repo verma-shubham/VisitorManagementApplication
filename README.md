@@ -48,13 +48,13 @@ spring.datasource.password=<yourPassword>
 4-explore the database schema created via hibernate
 
 5-To access the RESt APIs initially add details of user(s) through db(or atleast one ADMIN which can create different kind of users via APIs)
-encode your desired password using any online available BCrypt generator(ref:https://www.browserling.com/tools/bcrypt)
+encrypt your desired password using any online available BCrypt generator(ref:https://www.browserling.com/tools/bcrypt)
 (ex: password abc@123 -> $2a$10$6Kvgb.mhq5qT3jygCJFSjO/cdt5R0AKutILNXOQijW6ulk53h8HCO)
 adding users:-
 INSERT INTO USER VALUES(1,now(), 'abc@gmail.com',now(), 'Alok', '$2a$10$6Kvgb.mhq5qT3jygCJFSjO/cdt5R0AKutILNXOQijW6ulk53h8HCO',7524895726,'ADMIN','ACTIVE',null,null);
 INSERT INTO USER VALUES(24,now(), 'xyz@gmail.com',now(), 'Amir', '$2a$10$GqqJwgnWGPYOd04OFDiGaeLyNBWomtOfi86mtTDr89grgg8KZSoqO',9752489508,'RESIDENT','ACTIVE',null,null);
 INSERT INTO USER VALUES(17,now(), 'qaz@gmail.com',now(), 'Aman', '$2a$10$/kLxoLSJMX1OWl7KTtIeRe2dHhSVXhHE9WiL4uUkjsI9oCXWoihJ2',9786352322,'GATEKEEPER','ACTIVE',null,null);
 
-Visit http://localhost:8080/swagger-ui/index.html
+Visit http://localhost:8080/swagger-ui/index.html and login using emailId as username and actual paasword as password.
 
 Thankyou!

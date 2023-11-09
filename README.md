@@ -47,7 +47,7 @@ spring.datasource.password=<yourPassword>
 
 4-explore the database schema created via hibernate
 
-5-To access the RESt APIs add details of users (or atleast one ADMIN which can create different kind of users via APIs)
+5-To access the RESt APIs initially add details of user(s) through db(or atleast one ADMIN which can create different kind of users via APIs)
 encode your desired password using any online available BCrypt generator(ref:https://www.browserling.com/tools/bcrypt)
 (ex: password abc@123 -> $2a$10$6Kvgb.mhq5qT3jygCJFSjO/cdt5R0AKutILNXOQijW6ulk53h8HCO)
 adding users:-
